@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { api } from "../api.js";
+import { api, session } from "../api.js";
 import Icon from "../icons.jsx";
 import { inr } from "../format.js";
 import { Card } from "./Cards.jsx";
@@ -73,6 +73,16 @@ function UploadRow({ type, count, onDone }) {
     }
   }
 
+  async function clear() {
+    if (!window.confirm(`Delete all ${count} ${type.label.toLowerCase()} rows? This can't be undone.`)) return;
+    setState({ busy: true });
+    try {
+      const r = await api.clearData(type.kind);
+      setState({ ok: true, cleared: r.deleted, res: { books: r.books } });
+      onDone();
+    } catch (err) { setState({ error: err.message, errors: [] }); }
+  }
+
   const required = type.columns.filter((c) => c.required).map((c) => c.name);
   return (
     <li className={`up ${state?.error ? "is-bad" : state?.ok ? "is-ok" : ""}`}>
@@ -92,6 +102,11 @@ function UploadRow({ type, count, onDone }) {
           <button className="btn btn-dark magnet" onClick={() => input.current?.click()} disabled={state?.busy}>
             <Icon name="upload" size={16} /> {state?.busy ? "Checking…" : "Upload CSV"}
           </button>
+          {count > 0 && (
+            <button className="chip-btn danger" onClick={clear} disabled={state?.busy} title={`Delete all ${type.label.toLowerCase()}`}>
+              <Icon name="trash" size={14} /> Clear
+            </button>
+          )}
         </div>
       </div>
       {open && (
@@ -100,7 +115,10 @@ function UploadRow({ type, count, onDone }) {
           Dates like 2026-11-05 or 05/11/2026; amounts can include ₹ and commas.
         </p>
       )}
-      {state?.ok && (
+      {state?.ok && state.cleared != null && (
+        <div className="up-result" role="status"><p><Icon name="check" size={16} /> {state.cleared} rows deleted. Cash today {inr(state.res.books.cash_today)}.</p></div>
+      )}
+      {state?.ok && state.cleared == null && (
         <div className="up-result" role="status">
           <p><Icon name="check" size={16} /> {state.res.inserted} rows saved. Cash today {inr(state.res.books.cash_today)}, {state.res.books.open_invoices} unpaid invoices, {state.res.books.open_bills} unpaid bills.</p>
           {state.res.memory && <p>{state.res.memory}</p>}
@@ -123,6 +141,43 @@ function UploadRow({ type, count, onDone }) {
         </div>
       )}
     </li>
+  );
+}
+
+// Delete a business and everything in it: records, reports, shared links, schedules and its memory bank.
+function DeleteBusiness({ biz, i }) {
+  const [open, setOpen] = useState(false);
+  const [name, setName] = useState("");
+  const [busy, setBusy] = useState(false);
+  const [err, setErr] = useState("");
+  async function go(e) {
+    e.preventDefault();
+    setBusy(true); setErr("");
+    try {
+      await api.deleteBusiness();
+      session.useBusiness(null);
+      window.location.assign("/app");     // reload: the app opens another business, or offers to add one
+    } catch (x) { setErr(x.message); setBusy(false); }
+  }
+  return (
+    <Card i={i} className="danger-card">
+      <div className="card-head"><span className="ic"><Icon name="trash" size={18} /></span><h2>Delete this business</h2></div>
+      <p className="sub">Removes {biz.name} and everything in it: records, reports, shared links, schedules and its memory. This can't be undone.</p>
+      {!open ? (
+        <button className="btn btn-line danger" onClick={() => setOpen(true)}>Delete business…</button>
+      ) : (
+        <form className="form" onSubmit={go}>
+          <label>Type <strong>{biz.name}</strong> to confirm
+            <input value={name} onChange={(e) => setName(e.target.value)} autoFocus />
+          </label>
+          <div className="row-btns">
+            <button className="btn btn-dark danger-solid" disabled={busy || name.trim() !== biz.name.trim()}>{busy ? "Deleting…" : "Delete forever"}</button>
+            <button type="button" className="btn btn-line" onClick={() => { setOpen(false); setName(""); }}>Cancel</button>
+          </div>
+          {err && <p className="error">{err}</p>}
+        </form>
+      )}
+    </Card>
   );
 }
 
@@ -171,6 +226,7 @@ export default function DataPage({ biz, onChanged }) {
           <p className="sub">Fill this business with a year of records for Malabar Electronics, to try everything out.</p>
           <button className="btn btn-line" onClick={demo} disabled={!!busy}>{busy === "demo" ? "Loading…" : "Load demo data"}</button>
         </Card>
+        {!biz.is_demo && biz.role === "owner" && <DeleteBusiness biz={biz} i={4} />}
         {msg && <p className="saved" role="status">{msg}</p>}
       </div>
     </div>

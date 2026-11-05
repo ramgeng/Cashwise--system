@@ -1506,3 +1506,39 @@ button.rp-main { cursor: pointer; }
 
 .lp-small { margin: 16px 0 0; font-size: 14px; color: var(--ink-2); }
 .lp-small .link { font-size: 14px; }
+
+/* ================================================================ privacy policy and terms */
+.lg { min-height: 100vh; position: relative; z-index: 1; }
+.lg-top { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 12px max(16px, calc((100vw - 860px) / 2)); background: color-mix(in srgb, var(--bg) 85%, transparent);
+  -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+.lg-top-actions { display: flex; align-items: center; gap: 10px; }
+.lg-doc { max-width: 860px; margin: 0 auto; padding: 32px 16px 60px; }
+.lg-tabs { display: inline-flex; gap: 4px; padding: 5px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); margin-bottom: 22px; }
+.lg-tabs a { padding: 8px 16px; border-radius: 999px; font-weight: 700; font-size: 14px; color: var(--ink-2); text-decoration: none; }
+.lg-tabs a[aria-current="page"] { background: var(--accent); color: var(--on-accent); }
+.lg-body { background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: clamp(22px, 4vw, 44px); line-height: 1.65; font-size: 15.5px; color: var(--ink-2); }
+.lg-body h1 { margin: 0 0 4px; font-size: clamp(30px, 4vw, 40px); letter-spacing: -.03em; color: var(--ink); }
+.lg-body h2 { margin: 30px 0 8px; font-size: 20px; letter-spacing: -.02em; color: var(--ink); }
+.lg-body h3 { margin: 18px 0 4px; font-size: 16px; color: var(--ink); }
+.lg-body p { margin: 0 0 10px; }
+.lg-body ul { margin: 0 0 10px; padding-left: 20px; display: grid; gap: 6px; }
+.lg-body strong { color: var(--ink); }
+.lg-body a { color: var(--accent-strong); font-weight: 600; }
+:root:not([data-theme="dark"]) .lg-body a { color: #1f8f45; }
+.lg-meta { color: var(--muted); font-size: 13.5px; margin-bottom: 18px !important; }
+.lg-back { margin: 22px 0 0; }
+.lg-back a { display: inline-flex; align-items: center; gap: 4px; font-weight: 700; color: var(--ink-2); text-decoration: none; }
+.lg-back svg { transform: rotate(90deg); }
+.lg-links { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.lg-links a { color: inherit; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.lg-links a:hover { color: var(--ink); }
+
+/* deleting things */
+.chip-btn.danger { color: var(--neg); display: inline-flex; align-items: center; gap: 5px; }
+.btn.danger { color: var(--neg); border-color: var(--neg); }
+.btn.danger:hover { background: var(--neg); color: #fff; border-color: var(--neg); }
+.btn.danger-solid { background: var(--neg) !important; color: #fff !important; }
+.btn.danger-solid:disabled { opacity: .45; }
+.danger-card .ic { color: var(--neg); }
+.row-btns { display: flex; flex-wrap: wrap; gap: 8px; }

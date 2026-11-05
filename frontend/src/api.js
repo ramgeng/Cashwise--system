@@ -62,6 +62,7 @@ export const api = {
   // current business
   business: () => request("/business"),
   updateBusiness: (payload) => request("/business", { method: "PUT", json: payload }),
+  deleteBusiness: () => request("/business", { method: "DELETE" }),
   forecast: () => request("/forecast"),
   actions: () => request("/actions"),
   position: () => request("/position"),

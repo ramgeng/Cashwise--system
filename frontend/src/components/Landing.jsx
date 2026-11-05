@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { api } from "../api.js";
 import Icon from "../icons.jsx";
 import { Logo, Mascot, ThemeSwitch } from "./Shell.jsx";
+import { LegalLinks } from "./Legal.jsx";
 
 /*
   The overview page: what Cashwise is, who it's for, what's different, how it helps, and every feature,
@@ -529,6 +530,7 @@ export default function Landing({ dark, setDark, signedIn, onSignIn, onSignUp, o
       <footer className="lp-foot">
         <span className="lp-brand"><Logo on="auto" size={26} /><span>Cashwise</span></span>
         <p>Cash-flow insights to help you decide. Not financial advice.</p>
+        <LegalLinks />
         <button className="link" onClick={onSignIn}>{signLabel}</button>
       </footer>
     </div>

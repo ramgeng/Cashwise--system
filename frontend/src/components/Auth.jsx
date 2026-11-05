@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { api } from "../api.js";
 import Icon from "../icons.jsx";
 import { Logo, Mascot, ThemeSwitch } from "./Shell.jsx";
+import { LegalLinks } from "./Legal.jsx";
 
 const DEMO = { email: "demo@cashwise.app", password: "demo1234" };
 
@@ -216,7 +217,8 @@ export default function Auth({ onSignedIn, dark, setDark, initialError = "", ini
           )}
         </div>
 
-        <p className="auth-legal">Cashwise gives cash-flow insights to help you decide. It isn't financial advice.</p>
+        <p className="auth-legal">Cashwise gives cash-flow insights to help you decide. It isn't financial advice.
+          By signing in you agree to the terms. <LegalLinks /></p>
       </section>
     </div>
   );

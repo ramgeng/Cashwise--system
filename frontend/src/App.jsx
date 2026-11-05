@@ -5,6 +5,7 @@ import Pointer from "./components/Pointer.jsx";
 import Dashboard from "./Dashboard.jsx";
 import { SharedReport } from "./components/ReportDoc.jsx";
 import Landing from "./components/Landing.jsx";
+import Legal from "./components/Legal.jsx";
 import Icon from "./icons.jsx";
 
 function initialDark() {
@@ -69,7 +70,8 @@ const RETURN = readReturn();
 // Three pages: the overview at /, sign in at /signin (or /signup), and the app at /app.
 const pathOf = () => window.location.pathname.replace(/\/+$/, "") || "/";
 const TITLES = { "/": "Cashwise · Know your cash before the week starts", "/signin": "Sign in · Cashwise",
-  "/signup": "Create your account · Cashwise", "/app": "Cashwise" };
+  "/signup": "Create your account · Cashwise", "/app": "Cashwise",
+  "/privacy": "Privacy policy · Cashwise", "/terms": "Terms of use · Cashwise" };
 
 // A read-only report link: /r/<token>. Shown to anyone, signed in or not, with nothing else from the app.
 const SHARED = window.location.pathname.match(/^\/r\/([A-Za-z0-9_-]+)\/?$/)?.[1];
@@ -131,7 +133,8 @@ function MainApp() {
     choose(b.id);
   }
 
-  const page = path === "/signin" || path === "/signup" ? "auth" : path === "/app" ? "app" : "landing";
+  const page = path === "/signin" || path === "/signup" ? "auth" : path === "/app" ? "app"
+    : path === "/privacy" || path === "/terms" ? "legal" : "landing";
   // signed in people go straight past the sign-in page; signed out people can't see the app
   useEffect(() => {
     if (checking) return;
@@ -139,12 +142,15 @@ function MainApp() {
     if (page === "app" && !user) go("/signin", { replace: true });
   }, [page, user, checking, go]);
 
-  if (checking && page !== "landing") return <div className="boot"><span className="dots" aria-label="Loading"><i /><i /><i /></span></div>;
+  if (checking && page !== "landing" && page !== "legal") return <div className="boot"><span className="dots" aria-label="Loading"><i /><i /><i /></span></div>;
 
   return (
     <>
       <Pointer />
-      {page === "landing" ? (
+      {page === "legal" ? (
+        <Legal page={path.slice(1)} dark={dark} setDark={setDark} signedIn={!!user}
+          onHome={() => go("/")} onSignIn={() => go(user ? "/app" : "/signin")} />
+      ) : page === "landing" ? (
         <Landing dark={dark} setDark={setDark} signedIn={!!user} onSignIn={() => go(user ? "/app" : "/signin")}
           onSignUp={() => go(user ? "/app" : "/signup")} onSignedIn={signedIn} />
       ) : !user ? (
