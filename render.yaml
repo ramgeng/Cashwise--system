@@ -1,0 +1,43 @@
+# Render Blueprint: in Render, choose New > Blueprint and pick this repository.
+services:
+  - type: web
+    name: cashwise
+    runtime: docker
+    plan: free                 # change to "starter" to add the disk below and keep data across restarts
+    region: singapore          # closest to India
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    autoDeploy: true           # redeploys on every push to GitHub
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false            # Render asks you to paste it
+      - key: HINDSIGHT_API_KEY
+        sync: false
+      - key: HINDSIGHT_URL
+        value: https://api.hindsight.vectorize.io
+      - key: HINDSIGHT_BANK_ID
+        value: malabar-electronics
+      - key: JWT_SECRET
+        generateValue: true    # a long random secret, made once by Render
+      - key: SEED_DEMO
+        value: "1"
+      # Email for reports (optional; see DEPLOY.md). Without these, "Open in my email app" still works.
+      - key: SMTP_HOST
+        sync: false
+      - key: SMTP_PORT
+        value: "587"
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASSWORD
+        sync: false
+      - key: SMTP_FROM
+        sync: false
+      - key: REPORT_TZ
+        value: Asia/Kolkata
+      # Optional sign-in providers: add these later in the dashboard (see DEPLOY.md)
+      # GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET
+    # Paid plans only: keeps accounts and uploads when the service restarts.
+    # disk:
+    #   name: cashwise-data
+    #   mountPath: /srv/storage
+    #   sizeGB: 1

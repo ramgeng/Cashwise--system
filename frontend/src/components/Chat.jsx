@@ -1,12 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { api } from "../api.js";
+import { money } from "../format.js";
+import Icon from "../icons.jsx";
+import { Mascot } from "./Shell.jsx";
 
-const STARTERS = [
-  "Can I pay Vertex on Friday?",
-  "Who should I chase first this week?",
-  "What if Mehta pays 15 days late?",
-  "What if I pay Vertex 10 lakh on Friday and the rest on 27 Nov?",
-];
 
 const SECTIONS = ["Answer", "Recommended actions", "Evidence", "Pattern from memory", "Assumptions & uncertainty"];
 
@@ -26,7 +23,7 @@ function parse(text) {
   return parts.map((p) => ({ ...p, body: p.lines.join("\n").replace(/\*\*/g, "").trim() })).filter((p) => p.body);
 }
 
-function Reply({ msg, memory }) {
+function Reply({ msg, memory, onSaved }) {
   const [open, setOpen] = useState(false);
   const [rating, setRating] = useState(null);
   const [note, setNote] = useState("");
@@ -36,6 +33,7 @@ function Reply({ msg, memory }) {
     try {
       await api.feedback({ helpful, text, question: msg.question });
       setSaved(helpful ? "Saved. The agent will lean on this next time." : "Saved. The agent will avoid this next time.");
+      onSaved?.();
     } catch (e) {
       setSaved(e.message);
     }
@@ -46,7 +44,7 @@ function Reply({ msg, memory }) {
       {parse(msg.answer).map((p, i) => (
         <div key={i} className={`part ${p.title === "Answer" ? "part-answer" : ""} ${p.title === "Pattern from memory" ? "part-memory" : ""}`}>
           {p.title && p.title !== "Answer" && <h4>{p.title}</h4>}
-          <p>{p.body}</p>
+          <p>{money(p.body)}</p>
         </div>
       ))}
 
@@ -62,7 +60,7 @@ function Reply({ msg, memory }) {
             <p key={i}><code>{t.tool}</code> {JSON.stringify(t.args)}</p>
           ))}
           {msg.memories_used?.length > 0 && <h4>Remembered</h4>}
-          {msg.memories_used?.map((m, i) => <p key={i} className="mem">{m}</p>)}
+          {msg.memories_used?.map((m, i) => <p key={i} className="mem">{money(m)}</p>)}
         </div>
       )}
 
@@ -86,10 +84,30 @@ function Reply({ msg, memory }) {
   );
 }
 
-export default function Chat({ memory }) {
+const GENERIC_TIPS = [
+  "Tick an action in This week to see it on the chart.",
+  "Upload payments so I can learn how each customer pays.",
+  "Record what happened. I'll remember it next time.",
+  "Switch memory off to see what a plain dashboard says.",
+];
+const DEMO_SUGGEST = [
+  ["Can I pay Vertex on Friday?", "wallet"],
+  ["Who should I chase first this week?", "users"],
+  ["Will I face a cash shortage this month?", "alert"],
+  ["What if Mehta pays 15 days late?", "chart"],
+];
+const SUGGEST = [
+  ["Can I pay my biggest bill this month?", "wallet"],
+  ["Who should I chase first this week?", "users"],
+  ["Will I face a cash shortage this month?", "alert"],
+  ["What if my biggest customer pays 15 days late?", "chart"],
+];
+
+export default function Chat({ memory, onSaved, owner, inputRef, demo = false, memoryReady = true }) {
   const [msgs, setMsgs] = useState([]);
   const [q, setQ] = useState("");
   const [busy, setBusy] = useState(false);
+  const [typing, setTyping] = useState(false);
   const end = useRef(null);
 
   useEffect(() => {
@@ -112,14 +130,30 @@ export default function Chat({ memory }) {
     }
   }
 
+  const started = msgs.length > 0;
   return (
-    <section className="chat" aria-label="Ask about your cash">
-      <h2>Ask</h2>
+    <aside className={`agent ${started ? "is-started" : ""}`} aria-label="AI cash agent">
+      <div className="agent-head">
+        {started && <button className="link" onClick={() => setMsgs([])}>New chat</button>}
+        <span className={`online ${memory && memoryReady ? "" : "is-off"}`}>
+          <i />{!memory ? "Online, no memory" : memoryReady ? "Online, with memory" : "Memory not set up"}
+        </span>
+      </div>
+      <div className="agent-hero">
+        <Mascot talking={busy} listening={typing && !busy} tips={demo ? undefined : GENERIC_TIPS} />
+        <h2>AI Cash Agent</h2>
+        <p>Remembers how your customers pay</p>
+      </div>
+
       <div className="thread">
-        {msgs.length === 0 && (
+        {!started && (
           <div className="starters">
-            <p>Ask about any payment, customer or what-if. Numbers come from your records, never guessed.</p>
-            {STARTERS.map((s) => <button key={s} onClick={() => ask(s)}>{s}</button>)}
+            <p className="greet">Hello, {owner}! <span aria-hidden="true">👋</span><br />How can I help with your cash today?</p>
+            {(demo ? DEMO_SUGGEST : SUGGEST).map(([s, icon]) => (
+              <button key={s} onClick={() => ask(s)} className="suggest">
+                <span className="s-ic"><Icon name={icon} size={18} /></span>{s}
+              </button>
+            ))}
           </div>
         )}
         {msgs.map((m) =>
@@ -128,18 +162,27 @@ export default function Chat({ memory }) {
           ) : m.role === "error" ? (
             <p key={m.id} className="error">{m.text}</p>
           ) : (
-            <Reply key={m.id} msg={m} memory={m.memory} />
+            <Reply key={m.id} msg={m} memory={m.memory} onSaved={onSaved} />
           )
         )}
-        {busy && <p className="thinking">Checking your records{memory ? " and memory" : ""}…</p>}
+        {busy && (
+          <p className="thinking" role="status">
+            <span className="dots" aria-hidden="true"><i /><i /><i /></span>
+            Checking your records{memory ? " and memory" : ""}
+          </p>
+        )}
         <div ref={end} />
       </div>
+
       <form className="ask" onSubmit={(e) => { e.preventDefault(); ask(q); }}>
         <label htmlFor="q" className="sr-only">Your question</label>
-        <input id="q" value={q} onChange={(e) => setQ(e.target.value)}
-          placeholder="Can I pay Vertex on Friday?" disabled={busy} />
-        <button type="submit" disabled={busy || !q.trim()}>Ask</button>
+        <input id="q" ref={inputRef} value={q} onChange={(e) => setQ(e.target.value)}
+          onFocus={() => setTyping(true)} onBlur={() => setTyping(false)}
+          placeholder="Ask a question..." disabled={busy} />
+        <button type="submit" className="send magnet" disabled={busy || !q.trim()} aria-label="Send">
+          <Icon name="send" size={18} stroke={2.2} />
+        </button>
       </form>
-    </section>
+    </aside>
   );
 }

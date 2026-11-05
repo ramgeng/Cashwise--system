@@ -1,54 +1,44 @@
-"""Talk to the agent from the terminal.
+"""Talk to the agent in the terminal.
 
-Run from the project root:
-    python -m scripts.ask                       # chat with memory
-    python -m scripts.ask --baseline            # the "before" agent: no memory, naive forecast
+    python -m scripts.ask                       # chat as the demo business, with memory
+    python -m scripts.ask --baseline            # no memory, invoices assumed paid on time
     python -m scripts.ask "Can I pay Vertex on Friday?"
-
-Commands inside the chat:
-    /feedback <text>   tell the agent what you liked or didn't (saved to memory)
-    /outcome <text>    record what actually happened (saved to memory)
-    /quit
+Inside the chat:  /feedback <text>   /outcome <text>   /quit
 """
-import argparse
-
-from app.agent import CashAgent
+from app.core.errors import AppError
+from app.services.agent import CashAgent
+from scripts._pick import context, parser, pick
 
 
 def main():
-    p = argparse.ArgumentParser()
+    p = parser(__doc__)
     p.add_argument("question", nargs="*")
-    p.add_argument("--baseline", action="store_true", help="no memory, invoices assumed paid on due date")
-    p.add_argument("--verbose", action="store_true", help="show tool calls")
+    p.add_argument("--baseline", action="store_true")
+    p.add_argument("--verbose", action="store_true")
     a = p.parse_args()
+    b = pick(a.business)
+    books, fc, mem = context(b)
+    agent = CashAgent(fc, None if a.baseline else mem, b, use_memory=not a.baseline, verbose=a.verbose)
+    print(f"Cashwise - {b['name']} - {'no memory' if a.baseline else 'with memory'} - today is {books.as_of_date()}\n")
 
-    agent = CashAgent(use_memory=not a.baseline, verbose=a.verbose)
-    mode = "BASELINE (no memory)" if a.baseline else "WITH MEMORY"
-    print(f"CashFlow Intelligence - {mode} - today is {agent.today}\n")
-    try:
-        if a.question:
-            print(agent.ask(" ".join(a.question))["answer"])
-            return
-        while True:
-            q = input("\nYou: ").strip()
-            if not q:
-                continue
-            if q in ("/quit", "/exit"):
-                break
-            if q.startswith("/feedback "):
-                agent.feedback(q[len("/feedback "):])
-                print("Saved. I'll use that next time.")
-                continue
-            if q.startswith("/outcome "):
-                agent.outcome(q[len("/outcome "):])
-                print("Outcome saved.")
-                continue
-            res = agent.ask(q)
-            if a.verbose and res["memories_used"]:
-                print(f"  ({len(res['memories_used'])} memories used)")
-            print("\nAgent:\n" + res["answer"])
-    finally:
-        agent.close()
+    def answer(q):
+        try:
+            print("\nAgent:\n" + agent.ask(q)["answer"])
+        except AppError as e:
+            print(f"\n{e.detail}")
+
+    if a.question:
+        return answer(" ".join(a.question))
+    while True:
+        q = input("\nYou: ").strip()
+        if q in ("/quit", "/exit"):
+            break
+        if q.startswith("/feedback "):
+            agent.feedback(q[10:]); print("Saved.")
+        elif q.startswith("/outcome "):
+            agent.outcome(q[9:]); print("Saved.")
+        elif q:
+            answer(q)
 
 
 if __name__ == "__main__":

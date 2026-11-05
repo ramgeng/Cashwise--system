@@ -1,8 +1,10 @@
+fastapi>=0.110
+uvicorn[standard]
+python-multipart
+sqlalchemy>=2.0
+pyjwt[crypto]>=2.8
+httpx
+python-dotenv
 groq
 hindsight-client
-python-dotenv
-sqlalchemy>=2.0
-pandas
-numpy
-fastapi
-uvicorn[standard]
+tzdata              # time zones for scheduled reports (needed on Windows)

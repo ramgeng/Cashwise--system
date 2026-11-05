@@ -4,3 +4,4 @@ __pycache__/
 cashwise.db
 node_modules/
 frontend/dist/
+storage/
