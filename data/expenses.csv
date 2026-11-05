@@ -1,0 +1,102 @@
+date,category,amount,vendor,recurring
+2025-11-01,Rent,120000,Kochi Commercial Properties,Monthly
+2025-11-01,Owner drawings,200000,Anil Varghese (owner),Monthly
+2025-11-03,Internet & phone,8200,Telecom provider,Monthly
+2025-11-08,Fuel & local transport,18500,Various,Variable
+2025-11-10,Electricity,39500,KSEB,Monthly
+2025-11-19,Office & miscellaneous,21000,Various,Variable
+2025-11-22,Fuel & local transport,25500,Various,Variable
+2025-11-29,Salaries,280000,Staff payroll (9 employees),Monthly
+2025-12-01,Rent,120000,Kochi Commercial Properties,Monthly
+2025-12-01,Owner drawings,200000,Anil Varghese (owner),Monthly
+2025-12-03,Internet & phone,8200,Telecom provider,Monthly
+2025-12-08,Fuel & local transport,22000,Various,Variable
+2025-12-10,Electricity,32500,KSEB,Monthly
+2025-12-19,Office & miscellaneous,12000,Various,Variable
+2025-12-22,Fuel & local transport,24500,Various,Variable
+2025-12-31,Salaries,280000,Staff payroll (9 employees),Monthly
+2026-01-01,Rent,120000,Kochi Commercial Properties,Monthly
+2026-01-01,Owner drawings,200000,Anil Varghese (owner),Monthly
+2026-01-03,Internet & phone,8200,Telecom provider,Monthly
+2026-01-08,Fuel & local transport,20500,Various,Variable
+2026-01-10,Electricity,32500,KSEB,Monthly
+2026-01-19,Office & miscellaneous,18500,Various,Variable
+2026-01-22,Fuel & local transport,19000,Various,Variable
+2026-01-31,Salaries,280000,Staff payroll (9 employees),Monthly
+2026-02-01,Rent,120000,Kochi Commercial Properties,Monthly
+2026-02-01,Owner drawings,200000,Anil Varghese (owner),Monthly
+2026-02-03,Internet & phone,8200,Telecom provider,Monthly
+2026-02-08,Fuel & local transport,25000,Various,Variable
+2026-02-10,Electricity,40500,KSEB,Monthly
+2026-02-19,Office & miscellaneous,22000,Various,Variable
+2026-02-22,Fuel & local transport,25500,Various,Variable
+2026-02-28,Salaries,280000,Staff payroll (9 employees),Monthly
+2026-03-01,Rent,120000,Kochi Commercial Properties,Monthly
+2026-03-01,Owner drawings,200000,Anil Varghese (owner),Monthly
+2026-03-03,Internet & phone,8200,Telecom provider,Monthly
+2026-03-08,Fuel & local transport,23000,Various,Variable
+2026-03-10,Electricity,33000,KSEB,Monthly
+2026-03-19,Office & miscellaneous,19000,Various,Variable
+2026-03-22,Fuel & local transport,23000,Various,Variable
+2026-03-31,Salaries,280000,Staff payroll (9 employees),Monthly
+2026-04-03,Internet & phone,8200,Telecom provider,Monthly
+2026-04-08,Rent late fee,6000,Kochi Commercial Properties,No
+2026-04-08,Rent,120000,Kochi Commercial Properties,Monthly
+2026-04-08,Fuel & local transport,19000,Various,Variable
+2026-04-10,Electricity,38500,KSEB,Monthly
+2026-04-19,Office & miscellaneous,19500,Various,Variable
+2026-04-22,Fuel & local transport,24000,Various,Variable
+2026-04-30,Salaries,280000,Staff payroll (9 employees),Monthly
+2026-05-01,Rent,120000,Kochi Commercial Properties,Monthly
+2026-05-01,Owner drawings,200000,Anil Varghese (owner),Monthly
+2026-05-03,Internet & phone,8200,Telecom provider,Monthly
+2026-05-08,Fuel & local transport,18500,Various,Variable
+2026-05-10,Electricity,40500,KSEB,Monthly
+2026-05-19,Office & miscellaneous,16500,Various,Variable
+2026-05-22,Fuel & local transport,17000,Various,Variable
+2026-05-30,Salaries,280000,Staff payroll (9 employees),Monthly
+2026-06-01,Rent,120000,Kochi Commercial Properties,Monthly
+2026-06-01,Owner drawings,200000,Anil Varghese (owner),Monthly
+2026-06-03,Internet & phone,8200,Telecom provider,Monthly
+2026-06-08,Fuel & local transport,26000,Various,Variable
+2026-06-10,Electricity,36000,KSEB,Monthly
+2026-06-19,Office & miscellaneous,17000,Various,Variable
+2026-06-22,Fuel & local transport,25500,Various,Variable
+2026-06-30,Salaries,280000,Staff payroll (9 employees),Monthly
+2026-07-01,Rent,120000,Kochi Commercial Properties,Monthly
+2026-07-01,Owner drawings,200000,Anil Varghese (owner),Monthly
+2026-07-03,Internet & phone,8200,Telecom provider,Monthly
+2026-07-08,Fuel & local transport,19500,Various,Variable
+2026-07-10,Electricity,29000,KSEB,Monthly
+2026-07-19,Office & miscellaneous,15500,Various,Variable
+2026-07-22,Fuel & local transport,20500,Various,Variable
+2026-07-31,Salaries,280000,Staff payroll (9 employees),Monthly
+2026-08-01,Rent,120000,Kochi Commercial Properties,Monthly
+2026-08-01,Owner drawings,200000,Anil Varghese (owner),Monthly
+2026-08-03,Internet & phone,8200,Telecom provider,Monthly
+2026-08-08,Fuel & local transport,19000,Various,Variable
+2026-08-10,Electricity,40500,KSEB,Monthly
+2026-08-19,Office & miscellaneous,12000,Various,Variable
+2026-08-22,Fuel & local transport,18000,Various,Variable
+2026-08-31,Salaries,280000,Staff payroll (9 employees),Monthly
+2026-09-01,Rent,120000,Kochi Commercial Properties,Monthly
+2026-09-01,Owner drawings,200000,Anil Varghese (owner),Monthly
+2026-09-03,Internet & phone,8200,Telecom provider,Monthly
+2026-09-08,Fuel & local transport,19500,Various,Variable
+2026-09-10,Electricity,28500,KSEB,Monthly
+2026-09-19,Office & miscellaneous,21500,Various,Variable
+2026-09-22,Fuel & local transport,23500,Various,Variable
+2026-09-30,Salaries,280000,Staff payroll (9 employees),Monthly
+2026-10-01,Rent,120000,Kochi Commercial Properties,Monthly
+2026-10-01,Owner drawings,200000,Anil Varghese (owner),Monthly
+2026-10-03,Internet & phone,8200,Telecom provider,Monthly
+2026-10-08,Fuel & local transport,17000,Various,Variable
+2026-10-10,Electricity,40000,KSEB,Monthly
+2026-10-19,Office & miscellaneous,18500,Various,Variable
+2026-10-22,Fuel & local transport,23000,Various,Variable
+2026-10-27,Insurance renewal,118000,Warehouse & stock insurance,Yearly
+2026-10-30,Festival bonus,280000,Staff payroll (9 employees),Yearly
+2026-10-31,Salaries,280000,Staff payroll (9 employees),Monthly
+2026-11-01,Rent,120000,Kochi Commercial Properties,Monthly
+2026-11-01,Owner drawings,200000,Anil Varghese (owner),Monthly
+2026-11-03,Internet & phone,8200,Telecom provider,Monthly

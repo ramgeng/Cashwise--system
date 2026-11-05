@@ -1,0 +1,44 @@
+event_id,date,entity_type,entity_id,event_type,description,outcome
+E0001,2025-10-09,customer,C001,collection_attempt,"Email reminder sent to Rajesh Mehta for INV-1001 (Rs 304,500).","No reply. Paid on 2025-10-22, 16 days late."
+E0002,2025-10-23,customer,C001,collection_attempt,"Email reminder sent to Rajesh Mehta for INV-1002 (Rs 346,000).","No reply. Paid on 2025-11-06, 17 days late."
+E0003,2025-11-03,owner,OWNER,preference,Anil Varghese (owner) does a cash check every Monday morning and wants a 1-page summary.,
+E0004,2025-11-08,customer,C001,collection_attempt,"Email reminder sent to Rajesh Mehta for INV-1013 (Rs 277,500).","No reply. Paid on 2025-11-22, 17 days late."
+E0005,2025-11-22,customer,C001,collection_attempt,"Email reminder sent to Rajesh Mehta for INV-1014 (Rs 384,000).","No reply. Paid on 2025-12-07, 18 days late."
+E0006,2025-12-09,customer,C001,collection_attempt,"Email reminder sent to Rajesh Mehta for INV-1025 (Rs 310,000).","No reply. Paid on 2025-12-19, 13 days late."
+E0007,2025-12-10,supplier,S001,early_payment_discount,Paid Vertex BILL-519 8 days after billing to take the 2% early-payment discount.,"Saved Rs 13,040."
+E0008,2025-12-15,customer,C005,customer_note,Fortune Appliances informally pays every invoice in two instalments (about 50% + 50%).,Plan for half the cash around due date and the rest about 3 weeks later.
+E0009,2025-12-23,customer,C001,collection_attempt,"Email reminder sent to Rajesh Mehta for INV-1026 (Rs 272,000).","No reply. Paid on 2026-01-01, 12 days late."
+E0010,2026-01-08,customer,C001,collection_attempt,"Email reminder sent to Rajesh Mehta for INV-1037 (Rs 335,000).","No reply. Paid on 2026-01-16, 11 days late."
+E0011,2026-01-10,supplier,S001,early_payment_discount,Paid Vertex BILL-525 8 days after billing to take the 2% early-payment discount.,"Saved Rs 12,360."
+E0012,2026-01-22,customer,C001,collection_attempt,"Email reminder sent to Rajesh Mehta for INV-1038 (Rs 310,500).","No reply. Paid on 2026-01-30, 11 days late."
+E0013,2026-02-08,customer,C001,collection_attempt,"Email reminder sent to Rajesh Mehta for INV-1049 (Rs 284,000).","No reply. Paid on 2026-02-17, 12 days late."
+E0014,2026-02-22,customer,C001,collection_attempt,"Email reminder sent to Rajesh Mehta for INV-1050 (Rs 358,000).","No reply. Paid on 2026-03-05, 14 days late."
+E0015,2026-03-11,customer,C001,collection_attempt,"Email reminder sent to Rajesh Mehta for INV-1061 (Rs 240,500).","No reply. Paid on 2026-03-24, 16 days late."
+E0016,2026-03-20,supplier,S002,extension_request,"Asked Orion Components for a 5-day extension on BILL-533 (Rs 678,000) during cash crunch.","Granted by phone, no penalty. Orion is flexible if asked before the due date."
+E0017,2026-03-23,customer,C007,dispute,Lakshmi Menon disputed INV-1072: 3 damaged induction cooktops in the delivery.,"Agreed Rs 18,000 deduction after inspection."
+E0018,2026-03-25,customer,C001,collection_attempt,"Email reminder sent to Rajesh Mehta for INV-1062 (Rs 368,000).","No reply. Paid on 2026-04-03, 12 days late."
+E0019,2026-03-27,customer,C003,customer_note,Sreeram Retail and Mehta Traders both held March payments until after their 31 March year-end closing.,Pattern: expect big customers to delay payments due in the second half of March.
+E0020,2026-03-28,owner,OWNER,decision,Accountant suggested a Rs 5 lakh bank overdraft to cover the end-of-March gap. Anil declined.,Preference: avoid loans/overdrafts; chase receivables and negotiate supplier timing first.
+E0021,2026-04-01,owner,OWNER,decision,"Cash fell to about Rs 90,000 on 1 April. Anil skipped his own April drawings and protected salaries.",Root cause: Feb stock-up bills due in March while big customers held payments over year-end.
+E0022,2026-04-03,supplier,S003,late_payment_penalty,Held PowerCell BILL-534 to protect March salaries; paid 24 days late once collections came in.,"Charged 1.5% late fee (Rs 5,475). PowerCell does not give extensions."
+E0023,2026-04-07,customer,C001,collection_attempt,"Phoned Rajesh Mehta about INV-1073 (Rs 293,500), 2 days after due date.","Worked. Paid on 2026-04-10, 5 days late."
+E0024,2026-04-08,expense,RENT,late_payment_penalty,"April rent (Rs 1,20,000) paid 7 days late because cash hit Rs 90k on 1 April.","Landlord charged Rs 6,000 late fee and was unhappy. Owner: never delay rent again."
+E0025,2026-04-09,owner,OWNER,decision,"After the March crunch, Anil decided to phone slow payers 2 days after due date instead of emailing.",Applied to Mehta Traders from April 2026.
+E0026,2026-04-21,customer,C001,collection_attempt,"Phoned Rajesh Mehta about INV-1074 (Rs 308,500), 2 days after due date.","Worked. Paid on 2026-04-26, 7 days late."
+E0027,2026-04-24,owner,OWNER,capital_infusion,"After the March crunch, Anil added Rs 368,000 of personal savings as a cash buffer (not a loan).",Goal: never go below Rs 3 lakh again.
+E0028,2026-05-07,customer,C008,new_customer,"Onboarded Bluewave Systems (IT reseller, Kakkanad) on 30-day terms.",Paid on time so far.
+E0029,2026-05-08,customer,C001,collection_attempt,"Phoned Rajesh Mehta about INV-1085 (Rs 426,500), 2 days after due date.","Worked. Paid on 2026-05-11, 5 days late."
+E0030,2026-05-20,customer,C007,dispute_resolved,"INV-1072 settled after dispute, paid Rs 124,000.",Paid 62 days late. Lesson: inspect deliveries to Lakshmi Home Needs on arrival.
+E0031,2026-05-22,customer,C001,collection_attempt,"Phoned Rajesh Mehta about INV-1086 (Rs 277,500), 2 days after due date.","Worked. Paid on 2026-05-24, 4 days late."
+E0032,2026-06-07,customer,C001,collection_attempt,"Phoned Rajesh Mehta about INV-1097 (Rs 264,500), 2 days after due date.","Worked. Paid on 2026-06-12, 7 days late."
+E0033,2026-06-21,customer,C001,collection_attempt,"Phoned Rajesh Mehta about INV-1098 (Rs 330,500), 2 days after due date.","Worked. Paid on 2026-06-26, 7 days late."
+E0034,2026-06-26,customer,C004,customer_note,Joseph Thomas (Coastal Mobiles) said monsoon footfall is low and asked for patience on June-August invoices.,"Pattern: Coastal pays 2-4 weeks late in monsoon, on time otherwise."
+E0035,2026-07-08,customer,C001,collection_attempt,"Phoned Rajesh Mehta about INV-1111 (Rs 299,000), 2 days after due date.","Worked. Paid on 2026-07-10, 4 days late."
+E0036,2026-07-10,customer,C003,customer_note,Sreeram Retail accounts team blamed delays on their new billing software.,Delays have kept increasing every quarter since.
+E0037,2026-07-22,customer,C001,collection_attempt,"Phoned Rajesh Mehta about INV-1112 (Rs 203,500), 2 days after due date.","Worked. Paid on 2026-07-25, 5 days late."
+E0038,2026-08-07,customer,C001,collection_attempt,"Phoned Rajesh Mehta about INV-1125 (Rs 266,500), 2 days after due date.","Worked. Paid on 2026-08-12, 7 days late."
+E0039,2026-08-21,customer,C001,collection_attempt,"Phoned Rajesh Mehta about INV-1126 (Rs 256,000), 2 days after due date.","Worked. Paid on 2026-08-24, 5 days late."
+E0040,2026-09-07,customer,C001,collection_attempt,"Phoned Rajesh Mehta about INV-1139 (Rs 349,000), 2 days after due date.","Did not work: festival-season stock pressure. Paid on 2026-09-19, 14 days late."
+E0041,2026-09-21,customer,C001,collection_attempt,"Phoned Rajesh Mehta about INV-1140 (Rs 453,000), 2 days after due date.","Did not work: festival-season stock pressure. Paid on 2026-10-04, 15 days late."
+E0042,2026-10-08,customer,C001,collection_attempt,"Phoned Rajesh Mehta about INV-1153 (Rs 343,500), 2 days after due date.","Did not work: festival-season stock pressure. Paid on 2026-10-19, 13 days late."
+E0043,2026-10-22,customer,C001,collection_attempt,"Phoned Rajesh Mehta about INV-1154 (Rs 417,500), 2 days after due date.","Did not work: festival-season stock pressure. Paid on 2026-11-04, 15 days late."

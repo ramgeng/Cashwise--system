@@ -1,0 +1,345 @@
+date,type,reference,description,amount,balance
+2025-11-01,Supplier payment,PAY-0007,Vertex Electronics Pvt Ltd - BILL-507,-594000,2660000
+2025-11-01,Expense,EXP-0001,Rent,-120000,2540000
+2025-11-01,Expense,EXP-0002,Owner drawings,-200000,2340000
+2025-11-02,Receipt,RCPT-0016,Kerala Digital Store - INV-1015,219500,2559500
+2025-11-03,Receipt,RCPT-0011,Fortune Appliances - INV-1010,150000,2709500
+2025-11-03,Expense,EXP-0005,Internet & phone,-8200,2701300
+2025-11-06,Receipt,RCPT-0002,Mehta Traders - INV-1002,346000,3047300
+2025-11-07,Supplier payment,PAY-0010,PowerCell Batteries - BILL-510,-199000,2848300
+2025-11-08,Receipt,RCPT-0021,Coastal Mobiles - INV-1020,174000,3022300
+2025-11-08,Expense,EXP-0006,Fuel & local transport,-18500,3003800
+2025-11-10,Expense,EXP-0004,Electricity,-39500,2964300
+2025-11-11,Receipt,RCPT-0007,Sreeram Retail Chain - INV-1007,218500,3182800
+2025-11-11,Supplier payment,PAY-0012,Apex Packaging - BILL-512,-37500,3145300
+2025-11-12,Supplier payment,PAY-0011,Southern Logistics - BILL-511,-95000,3050300
+2025-11-14,Receipt,RCPT-0017,Kerala Digital Store - INV-1016,197000,3247300
+2025-11-15,Receipt,RCPT-0023,Fortune Appliances - INV-1022,167500,3414800
+2025-11-15,Supplier payment,PAY-0008,Vertex Electronics Pvt Ltd - BILL-508,-633000,2781800
+2025-11-16,Receipt,RCPT-0025,Trinity Computers - INV-1023,93500,2875300
+2025-11-19,Supplier payment,PAY-0009,Orion Components - BILL-509,-440000,2435300
+2025-11-19,Expense,EXP-0008,Office & miscellaneous,-21000,2414300
+2025-11-21,Receipt,RCPT-0018,Sreeram Retail Chain - INV-1017,286500,2700800
+2025-11-22,Receipt,RCPT-0014,Mehta Traders - INV-1013,277500,2978300
+2025-11-22,Receipt,RCPT-0026,Lakshmi Home Needs - INV-1024,100500,3078800
+2025-11-22,Expense,EXP-0007,Fuel & local transport,-25500,3053300
+2025-11-24,Receipt,RCPT-0022,Coastal Mobiles - INV-1021,196500,3249800
+2025-11-29,Receipt,RCPT-0019,Sreeram Retail Chain - INV-1018,262500,3512300
+2025-11-29,Expense,EXP-0003,Salaries,-280000,3232300
+2025-12-01,Expense,EXP-0009,Rent,-120000,3112300
+2025-12-01,Expense,EXP-0010,Owner drawings,-200000,2912300
+2025-12-02,Receipt,RCPT-0024,Fortune Appliances - INV-1022,167500,3079800
+2025-12-02,Supplier payment,PAY-0013,Vertex Electronics Pvt Ltd - BILL-513,-656000,2423800
+2025-12-03,Expense,EXP-0013,Internet & phone,-8200,2415600
+2025-12-04,Receipt,RCPT-0029,Kerala Digital Store - INV-1027,180500,2596100
+2025-12-07,Receipt,RCPT-0015,Mehta Traders - INV-1014,384000,2980100
+2025-12-08,Supplier payment,PAY-0016,PowerCell Batteries - BILL-516,-170000,2810100
+2025-12-08,Expense,EXP-0014,Fuel & local transport,-22000,2788100
+2025-12-10,Receipt,RCPT-0020,Sreeram Retail Chain - INV-1019,312500,3100600
+2025-12-10,Receipt,RCPT-0034,Coastal Mobiles - INV-1032,193000,3293600
+2025-12-10,Supplier payment,PAY-0019,Vertex Electronics Pvt Ltd - BILL-519,-638960,2654640
+2025-12-10,Expense,EXP-0012,Electricity,-32500,2622140
+2025-12-12,Supplier payment,PAY-0018,Apex Packaging - BILL-518,-31000,2591140
+2025-12-13,Supplier payment,PAY-0017,Southern Logistics - BILL-517,-87000,2504140
+2025-12-16,Receipt,RCPT-0030,Kerala Digital Store - INV-1028,249000,2753140
+2025-12-16,Supplier payment,PAY-0014,Vertex Electronics Pvt Ltd - BILL-514,-628000,2125140
+2025-12-17,Receipt,RCPT-0036,Fortune Appliances - INV-1034,115000,2240140
+2025-12-17,Receipt,RCPT-0038,Trinity Computers - INV-1035,80000,2320140
+2025-12-19,Receipt,RCPT-0027,Mehta Traders - INV-1025,310000,2630140
+2025-12-19,Expense,EXP-0016,Office & miscellaneous,-12000,2618140
+2025-12-20,Supplier payment,PAY-0015,Orion Components - BILL-515,-446000,2172140
+2025-12-22,Receipt,RCPT-0031,Sreeram Retail Chain - INV-1029,225500,2397640
+2025-12-22,Expense,EXP-0015,Fuel & local transport,-24500,2373140
+2025-12-24,Receipt,RCPT-0035,Coastal Mobiles - INV-1033,183500,2556640
+2025-12-29,Receipt,RCPT-0039,Lakshmi Home Needs - INV-1036,155000,2711640
+2025-12-31,Receipt,RCPT-0042,Kerala Digital Store - INV-1039,208000,2919640
+2025-12-31,Expense,EXP-0011,Salaries,-280000,2639640
+2026-01-01,Receipt,RCPT-0028,Mehta Traders - INV-1026,272000,2911640
+2026-01-01,Receipt,RCPT-0032,Sreeram Retail Chain - INV-1030,205000,3116640
+2026-01-01,Receipt,RCPT-0037,Fortune Appliances - INV-1034,115000,3231640
+2026-01-01,Expense,EXP-0017,Rent,-120000,3111640
+2026-01-01,Expense,EXP-0018,Owner drawings,-200000,2911640
+2026-01-03,Expense,EXP-0021,Internet & phone,-8200,2903440
+2026-01-07,Supplier payment,PAY-0022,PowerCell Batteries - BILL-522,-200000,2703440
+2026-01-08,Expense,EXP-0022,Fuel & local transport,-20500,2682940
+2026-01-10,Receipt,RCPT-0033,Sreeram Retail Chain - INV-1031,268000,2950940
+2026-01-10,Receipt,RCPT-0047,Coastal Mobiles - INV-1044,133500,3084440
+2026-01-10,Supplier payment,PAY-0025,Vertex Electronics Pvt Ltd - BILL-525,-605640,2478800
+2026-01-10,Expense,EXP-0020,Electricity,-32500,2446300
+2026-01-11,Supplier payment,PAY-0024,Apex Packaging - BILL-524,-39500,2406800
+2026-01-12,Supplier payment,PAY-0023,Southern Logistics - BILL-523,-85000,2321800
+2026-01-15,Receipt,RCPT-0049,Fortune Appliances - INV-1046,152500,2474300
+2026-01-15,Receipt,RCPT-0051,Trinity Computers - INV-1047,100000,2574300
+2026-01-15,Supplier payment,PAY-0020,Vertex Electronics Pvt Ltd - BILL-520,-588000,1986300
+2026-01-16,Receipt,RCPT-0040,Mehta Traders - INV-1037,335000,2321300
+2026-01-18,Receipt,RCPT-0043,Kerala Digital Store - INV-1040,195000,2516300
+2026-01-19,Supplier payment,PAY-0021,Orion Components - BILL-521,-338000,2178300
+2026-01-19,Expense,EXP-0024,Office & miscellaneous,-18500,2159800
+2026-01-21,Receipt,RCPT-0044,Sreeram Retail Chain - INV-1041,290500,2450300
+2026-01-22,Expense,EXP-0023,Fuel & local transport,-19000,2431300
+2026-01-23,Receipt,RCPT-0048,Coastal Mobiles - INV-1045,133000,2564300
+2026-01-30,Receipt,RCPT-0041,Mehta Traders - INV-1038,310500,2874800
+2026-01-31,Receipt,RCPT-0055,Kerala Digital Store - INV-1051,163500,3038300
+2026-01-31,Expense,EXP-0019,Salaries,-280000,2758300
+2026-02-01,Receipt,RCPT-0045,Sreeram Retail Chain - INV-1042,205500,2963800
+2026-02-01,Receipt,RCPT-0052,Lakshmi Home Needs - INV-1048,135000,3098800
+2026-02-01,Expense,EXP-0025,Rent,-120000,2978800
+2026-02-01,Expense,EXP-0026,Owner drawings,-200000,2778800
+2026-02-02,Receipt,RCPT-0050,Fortune Appliances - INV-1046,152500,2931300
+2026-02-03,Expense,EXP-0029,Internet & phone,-8200,2923100
+2026-02-07,Supplier payment,PAY-0028,PowerCell Batteries - BILL-528,-174000,2749100
+2026-02-08,Receipt,RCPT-0060,Coastal Mobiles - INV-1056,175000,2924100
+2026-02-08,Expense,EXP-0030,Fuel & local transport,-25000,2899100
+2026-02-10,Expense,EXP-0028,Electricity,-40500,2858600
+2026-02-11,Supplier payment,PAY-0030,Apex Packaging - BILL-530,-40500,2818100
+2026-02-12,Receipt,RCPT-0046,Sreeram Retail Chain - INV-1043,229000,3047100
+2026-02-12,Supplier payment,PAY-0029,Southern Logistics - BILL-529,-69500,2977600
+2026-02-15,Receipt,RCPT-0062,Fortune Appliances - INV-1058,112000,3089600
+2026-02-15,Receipt,RCPT-0064,Trinity Computers - INV-1059,75500,3165100
+2026-02-15,Supplier payment,PAY-0026,Vertex Electronics Pvt Ltd - BILL-526,-617000,2548100
+2026-02-17,Receipt,RCPT-0053,Mehta Traders - INV-1049,284000,2832100
+2026-02-17,Receipt,RCPT-0056,Kerala Digital Store - INV-1052,171500,3003600
+2026-02-19,Receipt,RCPT-0057,Sreeram Retail Chain - INV-1053,237500,3241100
+2026-02-19,Supplier payment,PAY-0027,Orion Components - BILL-527,-333000,2908100
+2026-02-19,Expense,EXP-0032,Office & miscellaneous,-22000,2886100
+2026-02-22,Expense,EXP-0031,Fuel & local transport,-25500,2860600
+2026-02-26,Receipt,RCPT-0061,Coastal Mobiles - INV-1057,119000,2979600
+2026-02-28,Receipt,RCPT-0063,Fortune Appliances - INV-1058,112000,3091600
+2026-02-28,Expense,EXP-0027,Salaries,-280000,2811600
+2026-03-01,Expense,EXP-0033,Rent,-120000,2691600
+2026-03-01,Expense,EXP-0034,Owner drawings,-200000,2491600
+2026-03-03,Expense,EXP-0037,Internet & phone,-8200,2483400
+2026-03-04,Receipt,RCPT-0058,Sreeram Retail Chain - INV-1054,210500,2693900
+2026-03-04,Supplier payment,PAY-0031,Vertex Electronics Pvt Ltd - BILL-531,-1172000,1521900
+2026-03-05,Receipt,RCPT-0054,Mehta Traders - INV-1050,358000,1879900
+2026-03-05,Receipt,RCPT-0068,Kerala Digital Store - INV-1063,224500,2104400
+2026-03-07,Receipt,RCPT-0065,Lakshmi Home Needs - INV-1060,96000,2200400
+2026-03-08,Expense,EXP-0038,Fuel & local transport,-23000,2177400
+2026-03-10,Expense,EXP-0036,Electricity,-33000,2144400
+2026-03-13,Receipt,RCPT-0073,Coastal Mobiles - INV-1068,124000,2268400
+2026-03-14,Supplier payment,PAY-0036,Apex Packaging - BILL-536,-46000,2222400
+2026-03-15,Supplier payment,PAY-0035,Southern Logistics - BILL-535,-80500,2141900
+2026-03-17,Receipt,RCPT-0075,Fortune Appliances - INV-1070,103500,2245400
+2026-03-17,Receipt,RCPT-0077,Trinity Computers - INV-1071,65000,2310400
+2026-03-18,Receipt,RCPT-0069,Kerala Digital Store - INV-1064,224500,2534900
+2026-03-18,Supplier payment,PAY-0032,Vertex Electronics Pvt Ltd - BILL-532,-1065000,1469900
+2026-03-19,Expense,EXP-0040,Office & miscellaneous,-19000,1450900
+2026-03-22,Expense,EXP-0039,Fuel & local transport,-23000,1427900
+2026-03-26,Receipt,RCPT-0074,Coastal Mobiles - INV-1069,149000,1576900
+2026-03-27,Supplier payment,PAY-0033,Orion Components - BILL-533,-678000,898900
+2026-03-31,Expense,EXP-0035,Salaries,-280000,618900
+2026-04-01,Receipt,RCPT-0070,Sreeram Retail Chain - INV-1065,217500,836400
+2026-04-01,Supplier payment,PAY-0037,Vertex Electronics Pvt Ltd - BILL-537,-746000,90400
+2026-04-03,Receipt,RCPT-0059,Sreeram Retail Chain - INV-1055,237500,327900
+2026-04-03,Receipt,RCPT-0066,Mehta Traders - INV-1061,240500,568400
+2026-04-03,Receipt,RCPT-0067,Mehta Traders - INV-1062,368000,936400
+2026-04-03,Supplier payment,PAY-0034,PowerCell Batteries - BILL-534,-370475,565925
+2026-04-03,Expense,EXP-0045,Internet & phone,-8200,557725
+2026-04-04,Receipt,RCPT-0076,Fortune Appliances - INV-1070,103500,661225
+2026-04-04,Receipt,RCPT-0081,Kerala Digital Store - INV-1075,254000,915225
+2026-04-05,Receipt,RCPT-0071,Sreeram Retail Chain - INV-1066,246500,1161725
+2026-04-07,Supplier payment,PAY-0040,PowerCell Batteries - BILL-540,-175000,986725
+2026-04-08,Expense,EXP-0041,Rent late fee,-6000,980725
+2026-04-08,Expense,EXP-0042,Rent,-120000,860725
+2026-04-08,Expense,EXP-0046,Fuel & local transport,-19000,841725
+2026-04-10,Receipt,RCPT-0079,Mehta Traders - INV-1073,293500,1135225
+2026-04-10,Expense,EXP-0044,Electricity,-38500,1096725
+2026-04-11,Receipt,RCPT-0086,Coastal Mobiles - INV-1080,192000,1288725
+2026-04-11,Supplier payment,PAY-0042,Apex Packaging - BILL-542,-38000,1250725
+2026-04-12,Supplier payment,PAY-0041,Southern Logistics - BILL-541,-76000,1174725
+2026-04-13,Receipt,RCPT-0088,Fortune Appliances - INV-1082,128500,1303225
+2026-04-14,Receipt,RCPT-0072,Sreeram Retail Chain - INV-1067,232500,1535725
+2026-04-15,Receipt,RCPT-0082,Kerala Digital Store - INV-1076,261500,1797225
+2026-04-15,Supplier payment,PAY-0038,Vertex Electronics Pvt Ltd - BILL-538,-781000,1016225
+2026-04-16,Receipt,RCPT-0090,Trinity Computers - INV-1083,71500,1087725
+2026-04-19,Supplier payment,PAY-0039,Orion Components - BILL-539,-421000,666725
+2026-04-19,Expense,EXP-0048,Office & miscellaneous,-19500,647225
+2026-04-22,Receipt,RCPT-0083,Sreeram Retail Chain - INV-1077,333000,980225
+2026-04-22,Expense,EXP-0047,Fuel & local transport,-24000,956225
+2026-04-23,Receipt,RCPT-0087,Coastal Mobiles - INV-1081,141000,1097225
+2026-04-24,Receipt,RCPT-OWNER,Owner capital infusion - ,368000,1465225
+2026-04-26,Receipt,RCPT-0080,Mehta Traders - INV-1074,308500,1773725
+2026-04-28,Receipt,RCPT-0091,Lakshmi Home Needs - INV-1084,162500,1936225
+2026-04-30,Receipt,RCPT-0089,Fortune Appliances - INV-1082,128500,2064725
+2026-04-30,Expense,EXP-0043,Salaries,-280000,1784725
+2026-05-01,Expense,EXP-0049,Rent,-120000,1664725
+2026-05-01,Expense,EXP-0050,Owner drawings,-200000,1464725
+2026-05-02,Receipt,RCPT-0094,Kerala Digital Store - INV-1087,274500,1739225
+2026-05-02,Supplier payment,PAY-0043,Vertex Electronics Pvt Ltd - BILL-543,-605000,1134225
+2026-05-03,Expense,EXP-0053,Internet & phone,-8200,1126025
+2026-05-04,Receipt,RCPT-0084,Sreeram Retail Chain - INV-1078,274500,1400525
+2026-05-08,Supplier payment,PAY-0046,PowerCell Batteries - BILL-546,-163000,1237525
+2026-05-08,Expense,EXP-0054,Fuel & local transport,-18500,1219025
+2026-05-10,Receipt,RCPT-0099,Coastal Mobiles - INV-1092,195000,1414025
+2026-05-10,Expense,EXP-0052,Electricity,-40500,1373525
+2026-05-11,Receipt,RCPT-0092,Mehta Traders - INV-1085,426500,1800025
+2026-05-12,Supplier payment,PAY-0048,Apex Packaging - BILL-548,-41000,1759025
+2026-05-13,Supplier payment,PAY-0047,Southern Logistics - BILL-547,-96500,1662525
+2026-05-15,Receipt,RCPT-0085,Sreeram Retail Chain - INV-1079,290500,1953025
+2026-05-15,Receipt,RCPT-0101,Fortune Appliances - INV-1094,144500,2097525
+2026-05-16,Receipt,RCPT-0103,Trinity Computers - INV-1095,129500,2227025
+2026-05-16,Supplier payment,PAY-0044,Vertex Electronics Pvt Ltd - BILL-544,-627000,1600025
+2026-05-17,Receipt,RCPT-0095,Kerala Digital Store - INV-1088,192500,1792525
+2026-05-19,Expense,EXP-0056,Office & miscellaneous,-16500,1776025
+2026-05-20,Receipt,RCPT-0078,Lakshmi Home Needs - INV-1072,124000,1900025
+2026-05-20,Supplier payment,PAY-0045,Orion Components - BILL-545,-334000,1566025
+2026-05-22,Expense,EXP-0055,Fuel & local transport,-17000,1549025
+2026-05-24,Receipt,RCPT-0093,Mehta Traders - INV-1086,277500,1826525
+2026-05-25,Receipt,RCPT-0104,Lakshmi Home Needs - INV-1096,116000,1942525
+2026-05-26,Receipt,RCPT-0096,Sreeram Retail Chain - INV-1089,213000,2155525
+2026-05-27,Receipt,RCPT-0100,Coastal Mobiles - INV-1093,199000,2354525
+2026-05-30,Expense,EXP-0051,Salaries,-280000,2074525
+2026-05-31,Receipt,RCPT-0107,Kerala Digital Store - INV-1099,212500,2287025
+2026-06-01,Supplier payment,PAY-0049,Vertex Electronics Pvt Ltd - BILL-549,-541000,1746025
+2026-06-01,Expense,EXP-0057,Rent,-120000,1626025
+2026-06-01,Expense,EXP-0058,Owner drawings,-200000,1426025
+2026-06-03,Receipt,RCPT-0097,Sreeram Retail Chain - INV-1090,255500,1681525
+2026-06-03,Expense,EXP-0061,Internet & phone,-8200,1673325
+2026-06-04,Receipt,RCPT-0102,Fortune Appliances - INV-1094,144500,1817825
+2026-06-04,Receipt,RCPT-0118,Bluewave Systems - INV-1109,160000,1977825
+2026-06-07,Supplier payment,PAY-0052,PowerCell Batteries - BILL-552,-147000,1830825
+2026-06-08,Expense,EXP-0062,Fuel & local transport,-26000,1804825
+2026-06-10,Expense,EXP-0060,Electricity,-36000,1768825
+2026-06-11,Supplier payment,PAY-0054,Apex Packaging - BILL-554,-46000,1722825
+2026-06-12,Receipt,RCPT-0105,Mehta Traders - INV-1097,264500,1987325
+2026-06-12,Supplier payment,PAY-0053,Southern Logistics - BILL-553,-79000,1908325
+2026-06-13,Receipt,RCPT-0098,Sreeram Retail Chain - INV-1091,319000,2227325
+2026-06-14,Receipt,RCPT-0114,Fortune Appliances - INV-1106,127000,2354325
+2026-06-14,Receipt,RCPT-0116,Trinity Computers - INV-1107,89500,2443825
+2026-06-15,Supplier payment,PAY-0050,Vertex Electronics Pvt Ltd - BILL-550,-548000,1895825
+2026-06-19,Supplier payment,PAY-0051,Orion Components - BILL-551,-304000,1591825
+2026-06-19,Expense,EXP-0064,Office & miscellaneous,-17000,1574825
+2026-06-22,Receipt,RCPT-0108,Kerala Digital Store - INV-1100,172500,1747325
+2026-06-22,Receipt,RCPT-0119,Bluewave Systems - INV-1110,96000,1843325
+2026-06-22,Expense,EXP-0063,Fuel & local transport,-25500,1817825
+2026-06-26,Receipt,RCPT-0106,Mehta Traders - INV-1098,330500,2148325
+2026-06-26,Receipt,RCPT-0109,Sreeram Retail Chain - INV-1101,263000,2411325
+2026-06-30,Receipt,RCPT-0115,Fortune Appliances - INV-1106,127000,2538325
+2026-06-30,Expense,EXP-0059,Salaries,-280000,2258325
+2026-07-01,Expense,EXP-0065,Rent,-120000,2138325
+2026-07-01,Expense,EXP-0066,Owner drawings,-200000,1938325
+2026-07-02,Receipt,RCPT-0112,Coastal Mobiles - INV-1104,134000,2072325
+2026-07-02,Supplier payment,PAY-0055,Vertex Electronics Pvt Ltd - BILL-555,-462000,1610325
+2026-07-03,Expense,EXP-0069,Internet & phone,-8200,1602125
+2026-07-04,Receipt,RCPT-0110,Sreeram Retail Chain - INV-1102,272000,1874125
+2026-07-04,Receipt,RCPT-0122,Kerala Digital Store - INV-1113,149000,2023125
+2026-07-05,Receipt,RCPT-0117,Lakshmi Home Needs - INV-1108,89500,2112625
+2026-07-07,Receipt,RCPT-0133,Bluewave Systems - INV-1123,119500,2232125
+2026-07-08,Supplier payment,PAY-0058,PowerCell Batteries - BILL-558,-132000,2100125
+2026-07-08,Expense,EXP-0070,Fuel & local transport,-19500,2080625
+2026-07-10,Receipt,RCPT-0113,Coastal Mobiles - INV-1105,167000,2247625
+2026-07-10,Receipt,RCPT-0120,Mehta Traders - INV-1111,299000,2546625
+2026-07-10,Expense,EXP-0068,Electricity,-29000,2517625
+2026-07-12,Supplier payment,PAY-0060,Apex Packaging - BILL-560,-31000,2486625
+2026-07-13,Supplier payment,PAY-0059,Southern Logistics - BILL-559,-56000,2430625
+2026-07-15,Receipt,RCPT-0123,Kerala Digital Store - INV-1114,155000,2585625
+2026-07-16,Receipt,RCPT-0111,Sreeram Retail Chain - INV-1103,201500,2787125
+2026-07-16,Receipt,RCPT-0129,Fortune Appliances - INV-1120,92000,2879125
+2026-07-16,Supplier payment,PAY-0056,Vertex Electronics Pvt Ltd - BILL-556,-497000,2382125
+2026-07-17,Receipt,RCPT-0131,Trinity Computers - INV-1121,51500,2433625
+2026-07-19,Receipt,RCPT-0134,Bluewave Systems - INV-1124,75500,2509125
+2026-07-19,Expense,EXP-0072,Office & miscellaneous,-15500,2493625
+2026-07-20,Supplier payment,PAY-0057,Orion Components - BILL-557,-337000,2156625
+2026-07-22,Expense,EXP-0071,Fuel & local transport,-20500,2136125
+2026-07-23,Receipt,RCPT-0132,Lakshmi Home Needs - INV-1122,111000,2247125
+2026-07-25,Receipt,RCPT-0121,Mehta Traders - INV-1112,203500,2450625
+2026-07-28,Receipt,RCPT-0124,Sreeram Retail Chain - INV-1115,157000,2607625
+2026-07-30,Receipt,RCPT-0130,Fortune Appliances - INV-1120,92000,2699625
+2026-07-31,Receipt,RCPT-0127,Coastal Mobiles - INV-1118,124500,2824125
+2026-07-31,Receipt,RCPT-0137,Kerala Digital Store - INV-1127,135000,2959125
+2026-07-31,Expense,EXP-0067,Salaries,-280000,2679125
+2026-08-01,Supplier payment,PAY-0061,Vertex Electronics Pvt Ltd - BILL-561,-783000,1896125
+2026-08-01,Expense,EXP-0073,Rent,-120000,1776125
+2026-08-01,Expense,EXP-0074,Owner drawings,-200000,1576125
+2026-08-03,Expense,EXP-0077,Internet & phone,-8200,1567925
+2026-08-05,Receipt,RCPT-0148,Bluewave Systems - INV-1137,88500,1656425
+2026-08-07,Receipt,RCPT-0125,Sreeram Retail Chain - INV-1116,136000,1792425
+2026-08-07,Supplier payment,PAY-0064,PowerCell Batteries - BILL-564,-248000,1544425
+2026-08-08,Expense,EXP-0078,Fuel & local transport,-19000,1525425
+2026-08-10,Receipt,RCPT-0128,Coastal Mobiles - INV-1119,150000,1675425
+2026-08-10,Expense,EXP-0076,Electricity,-40500,1634925
+2026-08-11,Supplier payment,PAY-0066,Apex Packaging - BILL-566,-36000,1598925
+2026-08-12,Receipt,RCPT-0135,Mehta Traders - INV-1125,266500,1865425
+2026-08-12,Supplier payment,PAY-0065,Southern Logistics - BILL-565,-69500,1795925
+2026-08-15,Supplier payment,PAY-0062,Vertex Electronics Pvt Ltd - BILL-562,-672000,1123925
+2026-08-16,Receipt,RCPT-0144,Fortune Appliances - INV-1134,85000,1208925
+2026-08-16,Receipt,RCPT-0146,Trinity Computers - INV-1135,85000,1293925
+2026-08-18,Receipt,RCPT-0126,Sreeram Retail Chain - INV-1117,169500,1463425
+2026-08-19,Supplier payment,PAY-0063,Orion Components - BILL-563,-462000,1001425
+2026-08-19,Expense,EXP-0080,Office & miscellaneous,-12000,989425
+2026-08-20,Receipt,RCPT-0149,Bluewave Systems - INV-1138,114500,1103925
+2026-08-22,Receipt,RCPT-0138,Kerala Digital Store - INV-1128,151500,1255425
+2026-08-22,Expense,EXP-0079,Fuel & local transport,-18000,1237425
+2026-08-24,Receipt,RCPT-0136,Mehta Traders - INV-1126,256000,1493425
+2026-08-29,Receipt,RCPT-0139,Sreeram Retail Chain - INV-1129,144500,1637925
+2026-08-31,Receipt,RCPT-0147,Lakshmi Home Needs - INV-1136,97000,1734925
+2026-08-31,Receipt,RCPT-0152,Kerala Digital Store - INV-1141,288000,2022925
+2026-08-31,Expense,EXP-0075,Salaries,-280000,1742925
+2026-09-01,Supplier payment,PAY-0067,Vertex Electronics Pvt Ltd - BILL-567,-737000,1005925
+2026-09-01,Expense,EXP-0081,Rent,-120000,885925
+2026-09-01,Expense,EXP-0082,Owner drawings,-200000,685925
+2026-09-02,Receipt,RCPT-0142,Coastal Mobiles - INV-1132,119500,805425
+2026-09-02,Receipt,RCPT-0145,Fortune Appliances - INV-1134,85000,890425
+2026-09-03,Expense,EXP-0085,Internet & phone,-8200,882225
+2026-09-06,Receipt,RCPT-0140,Sreeram Retail Chain - INV-1130,166000,1048225
+2026-09-06,Receipt,RCPT-0163,Bluewave Systems - INV-1151,178500,1226725
+2026-09-07,Supplier payment,PAY-0070,PowerCell Batteries - BILL-570,-214000,1012725
+2026-09-08,Expense,EXP-0086,Fuel & local transport,-19500,993225
+2026-09-10,Receipt,RCPT-0157,Coastal Mobiles - INV-1146,148500,1141725
+2026-09-10,Expense,EXP-0084,Electricity,-28500,1113225
+2026-09-11,Supplier payment,PAY-0072,Apex Packaging - BILL-572,-33500,1079725
+2026-09-12,Supplier payment,PAY-0071,Southern Logistics - BILL-571,-92000,987725
+2026-09-15,Receipt,RCPT-0159,Fortune Appliances - INV-1148,143500,1131225
+2026-09-15,Supplier payment,PAY-0068,Vertex Electronics Pvt Ltd - BILL-568,-754000,377225
+2026-09-16,Receipt,RCPT-0143,Coastal Mobiles - INV-1133,93000,470225
+2026-09-16,Receipt,RCPT-0161,Trinity Computers - INV-1149,128000,598225
+2026-09-18,Receipt,RCPT-0141,Sreeram Retail Chain - INV-1131,151000,749225
+2026-09-18,Receipt,RCPT-0153,Kerala Digital Store - INV-1142,250500,999725
+2026-09-19,Receipt,RCPT-0150,Mehta Traders - INV-1139,349000,1348725
+2026-09-19,Receipt,RCPT-0164,Bluewave Systems - INV-1152,121000,1469725
+2026-09-19,Supplier payment,PAY-0069,Orion Components - BILL-569,-387000,1082725
+2026-09-19,Expense,EXP-0088,Office & miscellaneous,-21500,1061225
+2026-09-21,Receipt,RCPT-0162,Lakshmi Home Needs - INV-1150,134500,1195725
+2026-09-22,Expense,EXP-0087,Fuel & local transport,-23500,1172225
+2026-09-23,Receipt,RCPT-0158,Coastal Mobiles - INV-1147,140500,1312725
+2026-09-27,Receipt,RCPT-0154,Sreeram Retail Chain - INV-1143,229500,1542225
+2026-09-29,Receipt,RCPT-0160,Fortune Appliances - INV-1148,143500,1685725
+2026-09-30,Expense,EXP-0083,Salaries,-280000,1405725
+2026-10-01,Expense,EXP-0089,Rent,-120000,1285725
+2026-10-01,Expense,EXP-0090,Owner drawings,-200000,1085725
+2026-10-02,Supplier payment,PAY-0073,Vertex Electronics Pvt Ltd - BILL-573,-720000,365725
+2026-10-03,Receipt,RCPT-0167,Kerala Digital Store - INV-1155,261000,626725
+2026-10-03,Expense,EXP-0093,Internet & phone,-8200,618525
+2026-10-04,Receipt,RCPT-0151,Mehta Traders - INV-1140,453000,1071525
+2026-10-08,Receipt,RCPT-0155,Sreeram Retail Chain - INV-1144,341500,1413025
+2026-10-08,Supplier payment,PAY-0076,PowerCell Batteries - BILL-576,-224000,1189025
+2026-10-08,Expense,EXP-0094,Fuel & local transport,-17000,1172025
+2026-10-09,Receipt,RCPT-0176,Bluewave Systems - INV-1165,159500,1331525
+2026-10-10,Expense,EXP-0092,Electricity,-40000,1291525
+2026-10-12,Receipt,RCPT-0170,Coastal Mobiles - INV-1160,207000,1498525
+2026-10-12,Supplier payment,PAY-0078,Apex Packaging - BILL-578,-42500,1456025
+2026-10-13,Supplier payment,PAY-0077,Southern Logistics - BILL-577,-89500,1366525
+2026-10-16,Receipt,RCPT-0172,Fortune Appliances - INV-1162,114500,1481025
+2026-10-16,Supplier payment,PAY-0074,Vertex Electronics Pvt Ltd - BILL-574,-773000,708025
+2026-10-17,Receipt,RCPT-0168,Kerala Digital Store - INV-1156,210000,918025
+2026-10-17,Receipt,RCPT-0174,Trinity Computers - INV-1163,85500,1003525
+2026-10-19,Receipt,RCPT-0165,Mehta Traders - INV-1153,343500,1347025
+2026-10-19,Expense,EXP-0096,Office & miscellaneous,-18500,1328525
+2026-10-20,Receipt,RCPT-0156,Sreeram Retail Chain - INV-1145,333500,1662025
+2026-10-20,Supplier payment,PAY-0075,Orion Components - BILL-575,-418000,1244025
+2026-10-22,Expense,EXP-0095,Fuel & local transport,-23000,1221025
+2026-10-23,Receipt,RCPT-0171,Coastal Mobiles - INV-1161,161000,1382025
+2026-10-23,Receipt,RCPT-0177,Bluewave Systems - INV-1166,157500,1539525
+2026-10-27,Receipt,RCPT-0175,Lakshmi Home Needs - INV-1164,125500,1665025
+2026-10-27,Expense,EXP-0101,Insurance renewal,-118000,1547025
+2026-10-30,Expense,EXP-0100,Festival bonus,-280000,1267025
+2026-10-31,Receipt,RCPT-0169,Sreeram Retail Chain - INV-1157,324000,1591025
+2026-10-31,Receipt,RCPT-0179,Kerala Digital Store - INV-1181,200000,1791025
+2026-10-31,Expense,EXP-0091,Salaries,-280000,1511025
+2026-11-01,Supplier payment,PAY-0079,Vertex Electronics Pvt Ltd - BILL-579,-663000,848025
+2026-11-01,Expense,EXP-0097,Rent,-120000,728025
+2026-11-01,Expense,EXP-0098,Owner drawings,-200000,528025
+2026-11-03,Expense,EXP-0099,Internet & phone,-8200,519825
+2026-11-04,Receipt,RCPT-0166,Mehta Traders - INV-1154,417500,937325
+2026-11-04,Receipt,RCPT-0173,Fortune Appliances - INV-1162,114500,1051825
+2026-11-05,Receipt,RCPT-0178,Bluewave Systems - INV-1175,148500,1200325

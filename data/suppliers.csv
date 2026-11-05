@@ -1,0 +1,6 @@
+supplier_id,name,category,payment_terms_days,early_payment_discount_pct,discount_window_days,late_fee_pct_per_month
+S001,Vertex Electronics Pvt Ltd,Consumer electronics stock,30,2.0,10,0.0
+S002,Orion Components,Accessories & components,45,0.0,0,0.0
+S003,PowerCell Batteries,Batteries & power banks,30,0.0,0,1.5
+S004,Southern Logistics,Freight & delivery,15,0.0,0,0.0
+S005,Apex Packaging,Packaging material,30,0.0,0,0.0
